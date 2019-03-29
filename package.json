@@ -1,0 +1,39 @@
+{
+  "name": "nuxt-i18n-default",
+  "version": "0.0.1",
+  "description": "Add $td() method to specify default value",
+  "main": "src/module.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint src/*.js",
+    "lint:fix": "eslint src/*.js --fix",
+    "prepublishOnly": "npm run test",
+    "precommit": "echo 'Pre-commit checks...' && npm run lint"
+  },
+  "pre-commit": [
+    "precommit"
+  ],
+  "keywords": [
+    "vue",
+    "nuxt",
+    "i18n",
+    "default"
+  ],
+  "author": "shrpne <shrpne@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/shrpne/nuxt-i18n-default",
+  "bugs": {
+    "url": "https://github.com/shrpne/nuxt-i18n-default/issues"
+  },
+  "homepage": "https://github.com/shrpne/nuxt-i18n-default",
+  "dependencies": {
+    "entity-decode": "^2.0.2",
+    "lodash-es": "^4.17.11"
+  },
+  "devDependencies": {
+    "eslint": "^5",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "pre-commit": "^1.2.2"
+  }
+}
