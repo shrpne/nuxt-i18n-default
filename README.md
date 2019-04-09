@@ -23,10 +23,10 @@ Register Nuxt module
 // nuxt-config.js
 module.exports = {
     modules: [
+        'nuxt-i18n-default',
         ['nuxt-i18n', {
             // options
         }],
-        'nuxt-i18n-default',
     ],
 };
 ```
