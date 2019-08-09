@@ -1,6 +1,6 @@
 {
   "name": "nuxt-i18n-default",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Add $td() method to specify default value",
   "main": "src/module.js",
   "scripts": {
@@ -27,17 +27,16 @@
   },
   "homepage": "https://github.com/shrpne/nuxt-i18n-default",
   "dependencies": {
-    "entity-decode": "^2.0.2",
-    "lodash-es": "^4.17.11"
+    "entity-decode": "^2.0.2"
   },
   "devDependencies": {
-    "eslint": "^5",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
+    "eslint": "^6",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
     "pre-commit": "^1.2.2"
   },
   "peerDependencies": {
-    "vue": "^2.0.0",
-    "nuxt-i18n": "^5.0.0"
+    "vue": "^2.6.10",
+    "nuxt-i18n": "^6.0.0"
   }
 }
