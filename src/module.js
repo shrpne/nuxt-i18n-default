@@ -1,20 +1,17 @@
-const { resolve, join } = require('path');
-
-const MODULE_DIR = 'nuxt-i18n-default';
+import { defineNuxtModule, addPlugin, addTemplate, createResolver, isNuxt2 as _isNuxt2 } from '@nuxt/kit';
 
 /** @type {import('@nuxt/types').Module} */
-export default function i18nDefault() {
-    this.addTemplate({
-        src: resolve(__dirname, 'translate-default.js'),
-        fileName: join(MODULE_DIR, 'translate-default.js'),
-        options: {},
-    });
-    this.addPlugin({
-        src: resolve(__dirname, 'plugin.js'),
-        fileName: join(MODULE_DIR, 'plugin.js'),
-        options: {},
-    });
-}
+export default defineNuxtModule({
+    setup(options, nuxt) {
+        const isNuxt2 = _isNuxt2(nuxt);
+        // Create resolver to resolve relative paths
+        const { resolve } = createResolver(import.meta.url);
 
-
-module.exports.meta = require('../package.json');
+        addTemplate(resolve('./translate-default.js'));
+        if (isNuxt2) {
+            addPlugin(resolve('./plugin.js'));
+        } else {
+            addPlugin(resolve('./plugin-vue3.js'));
+        }
+    },
+});

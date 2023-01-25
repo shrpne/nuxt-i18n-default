@@ -24,7 +24,7 @@ Register Nuxt module
 module.exports = {
     modules: [
         'nuxt-i18n-default',
-        ['nuxt-i18n', {
+        ['@nuxtjs/i18n', {
             // options
         }],
     ],

@@ -1,3 +1,6 @@
+## 0.1.0 - 2023-01-26
+- add nuxt3 support
+
 ## 0.0.3 - 2023-01-25
 - add types
 - minor fix

@@ -1,6 +1,18 @@
 {
-  "extends": "eslint-config-airbnb-base",
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "extends": [
+    "plugin:import/recommended",
+    "eslint:recommended"
+  ],
   "rules": {
+    "arrow-parens": ["error", "always"],
+    "comma-dangle": ["error", "always-multiline"],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "semi": ["error", "always"],
+    "semi-spacing": "error",
+    "space-before-function-paren": ["error", {"anonymous": "never", "named": "never", "asyncArrow": "always"}],
     "indent": ["error", 4, { "SwitchCase": 1 }],
     "max-len": ["off"],
     "no-use-before-define": ["off"],
