@@ -2,6 +2,7 @@ const { resolve, join } = require('path');
 
 const MODULE_DIR = 'nuxt-i18n-default';
 
+/** @type {import('@nuxt/types').Module} */
 export default function i18nDefault() {
     this.addTemplate({
         src: resolve(__dirname, 'translate-default.js'),

@@ -4,7 +4,8 @@
     "indent": ["error", 4, { "SwitchCase": 1 }],
     "max-len": ["off"],
     "no-use-before-define": ["off"],
-    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-multiple-empty-lines": ["error" , {"max":  2}]
   },
   "env": {
     "browser": true
