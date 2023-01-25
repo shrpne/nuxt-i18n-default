@@ -1,3 +1,5 @@
+// @see https://nuxt.com/docs/guide/directory-structure/plugins#advanced
+
 import type {VueI18nDefault} from './default'
 
 declare module '#app' {

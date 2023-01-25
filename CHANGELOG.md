@@ -1,3 +1,6 @@
+## 0.1.1 - 2023-01-26
+- remove peer deps
+
 ## 0.1.0 - 2023-01-26
 - add nuxt3 support
 

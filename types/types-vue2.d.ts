@@ -1,6 +1,7 @@
+// @see // @see https://typescript.nuxtjs.org/cookbook/plugins/#ii-inject-into-context
+
 import type {VueI18nDefault} from './default'
 
-// @see https://typescript.nuxtjs.org/cookbook/plugins/#ii-inject-into-context
 declare module 'vue/types/vue' {
     // this.$td inside Vue components
     interface Vue {
@@ -8,7 +9,6 @@ declare module 'vue/types/vue' {
     }
 }
 
-// @see https://typescript.nuxtjs.org/cookbook/plugins/#ii-inject-into-context
 declare module '@nuxt/types' {
     // nuxtContext.app.$td inside asyncData, fetch, plugins, middleware, nuxtServerInit
     interface NuxtAppOptions {

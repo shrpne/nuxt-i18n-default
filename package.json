@@ -1,6 +1,6 @@
 {
   "name": "nuxt-i18n-default",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Add $td() method to specify default value",
   "type": "module",
   "main": "src/module.js",
@@ -33,12 +33,8 @@
     "entity-decode": "^2.0.2"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.15.8",
     "eslint": "^8",
     "eslint-plugin-import": "^2.27.5",
     "pre-commit": "^1.2.2"
-  },
-  "peerDependencies": {
-    "@nuxtjs/i18n": "^7"
   }
 }
